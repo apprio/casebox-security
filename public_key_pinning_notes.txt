@@ -9,3 +9,10 @@ base64
 # purpose of the command is to pull out the public key in binary form
 # and generate a sha256 digest in binary which ultimately is passed
 # to base64 to obtain a base64 encoding
+
+# another good resource is the report-uri.io homepage
+# lots of nice resources if you don't want to do the command line route
+# URL: https://report-uri.io/home/tools
+
+
+
