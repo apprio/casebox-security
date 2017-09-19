@@ -1,0 +1,6 @@
+# execute from command line to generate hash for HTTP Public Kep Pinning (HPKP)
+
+openssl x509 -in public.cer -pubkey -noout | \
+openssl rsa -pubin -outform der | \
+openssl dgst -sha256 -binary | \
+base64
