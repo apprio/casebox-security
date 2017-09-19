@@ -1,6 +1,11 @@
 # execute from command line to generate hash for HTTP Public Kep Pinning (HPKP)
+# sourced material from https://www.tollmanz.com/public-key-pinning-for-http/
 
 openssl x509 -in public.cer -pubkey -noout | \
 openssl rsa -pubin -outform der | \
 openssl dgst -sha256 -binary | \
 base64
+
+# purpose of the command is to pull out the public key in binary form
+# and generate a sha256 digest in binary which ultimately is passed
+# to base64 to obtain a base64 encoding
